@@ -1,0 +1,371 @@
+@font-face{
+    font-family: Cookie;
+    src: url("../fonts/Cookie/Cookie-Regular.ttf");
+}
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cookie;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+html{
+    font-size: 1.5rem;
+}
+
+
+section h2{
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: Raleway;
+    font-size: 0.8rem;
+}
+
+
+
+/* Inicio: info de Coachella y input para email+registro */
+
+header{
+    background-image: url('../images/Coachella.JPG');
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16vw;
+    padding: 45vh;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+}
+
+#info:hover{
+    opacity: 1;
+    background-color: rgba(177, 157, 41, 0.468);
+    height: 120vh;
+
+}
+
+header h2{
+    font-size: 5rem;
+}
+
+/* INPUT DE REGISTRO */
+
+header form{
+    /* border-radius: 20px; */
+    /* margin: 30px 0; */
+    width: 50%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px 0;
+    padding: 5px;
+    min-width: 200px;
+}
+
+button#registro{
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    width: 140px;
+    border: none;
+    border-radius: 5vw;
+    background-color: rgb(0, 0, 0);
+}
+
+button#registro:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+input, textarea {
+    border-radius: 6px;
+    border: 0;
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+header input{
+    margin: 20px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+iframe{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 50%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+/* MENÚ NAV */
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a{
+    height: 1.85vh;
+    padding: 0.26vw 0.92vh;
+    margin: 0.78vw 0.92vh;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5vw;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* ZONA A: ARTISTAS */
+
+#zona_A{
+    background-color: rgb(255, 255, 255);
+    height: 250vh;
+    padding: 2.5vw 3.75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+#artistas_section{
+    padding: 3vw;
+    padding-bottom: 5vh;
+}
+
+#zona_A article{
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1.6vw;
+    border: 1px solid black;
+    position: relative;
+}
+
+#zona_A img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.6vw;
+}
+
+.texto{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(61, 60, 60, 0.368);
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 1.6vw;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.texto:hover{
+    opacity: 1;
+}
+
+
+
+/* ZONA B: SPONSORS */
+
+#zona_B{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 2.5vw 3.75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sponsors_section{
+    padding: 3vw;
+    padding-bottom: 5vh;
+}
+
+#zona_B article{
+    position: relative;
+    margin: 5vw;
+    height: 9vh;
+}
+
+#zona_B img{
+    width: 100%;
+    height: 12vh;
+}
+
+
+
+
+
+/* ZONA C Y D: PROGRAMA Y MAPA */
+
+#C_D{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+
+
+/* ZONA C: PROGRAMA */
+#zona_C{
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 50vw;
+    padding: 2.5vw 10vh;
+    /* padding: 5vh; */
+}
+
+strong{
+    font-size: 1.2rem;
+}
+
+
+
+/* ZONA D: MAPA */
+#zona_D{
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 50vw;
+    padding: 3.75vh 2.5vw;
+}
+
+iframe{
+    height: 50vh;
+    width: 42vw;
+    padding: 0;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    height: 60vh;
+    padding: 3.75vh 2.5vw;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+footer article{
+    background-color: rgba(177, 157, 41, 0.468);
+    height: 35vh;
+    width: 18vw;
+    padding: 3vh 2.5vw;
+    margin: 5vw 5vh;
+}
+
+.sponsors, .contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacto p{
+    font-size: 0.7rem;
+}
+
+.redes{
+    padding: 5vh;
+    font-size: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coachella{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+footer a:hover{
+    color: rgb(70, 70, 70);
+}
+
+footer img{
+    height: 4.5vh;
+    width: auto;
+}
+
+
+
+
+/* BOTÓN HACIA ARRIBA */
+
+button#boton_fijo{
+    background-color: rgb(255, 255, 255);
+    margin: 1.5vw;
+    bottom: 5vh;
+    height: 3.7vh;
+    width: 2vw;
+    display: flex;
+    position: fixed;
+    right: 0;
+    border-radius: 2.6vw;
+    object-fit: fill;
+}
+
+#boton_fijo img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 2.6vw;
+}
